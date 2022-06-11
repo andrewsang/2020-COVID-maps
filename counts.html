@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Interactive Web Mapping</title>
+    <title>COVID cases in the USA</title>
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.5.0/mapbox-gl.css" rel="stylesheet">
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.5.0/mapbox-gl.js"></script>
@@ -178,8 +178,9 @@
                     });
                     document.getElementById('text-description').innerHTML = county.length ?
                     `<h3>${county[0].properties.county} county</h3><p><strong><em>${county[0].properties.cases}</strong> cases in 2020</em></p>` :
-                    `<p>Hover over a county!</p>`;
+                    `<p>Please mouseover over a county</p>`;
                 });
+
             });
         };
         
